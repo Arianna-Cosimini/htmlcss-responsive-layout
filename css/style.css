@@ -335,4 +335,16 @@ nav #menu-nav{
     background-color: #fff;
 }
 
+footer{
+    background-color: #333333;
+}
+
+footer.center{
+    padding: 13px 18px;
+}
+
+footer .text-center :nth-child(2){
+    margin-bottom: 0;
+}
+
 
