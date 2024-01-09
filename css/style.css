@@ -287,11 +287,52 @@ nav #menu-nav{
     min-height: 65px;
     border-radius: 50%;
 
+    /* test */
+
 }
+
 
 #about-us .card-text h2{
     min-height: 50px ;
+
+    /* test */
 }
 
+#get-started .text-center{
+    align-items: center;
+}
+
+
+#get-started .text-center strong{
+    background-color:  #6338a1;
+
+    /* test */
+}
+
+#get-started h3{
+    width: 98px;
+    min-height: 27px;
+    background-color:  #6338a1;
+
+    /* test */
+    margin-bottom: 15px;
+
+}
+
+#get-started .btn-get-started{
+    width: 100px;
+    min-height: 25px;
+    background-color: white;
+
+    /* test */
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.copyright{
+    width: 100px;
+    min-height: 15px;
+    background-color: #fff;
+}
 
 
