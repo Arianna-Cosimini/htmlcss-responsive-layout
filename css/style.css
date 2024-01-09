@@ -263,14 +263,34 @@ nav #menu-nav{
     align-items: flex-start;
 }
 
-#benefits .card .btn-card{
+.btn-card{
     width: 50px;
     min-height: 15px;
 
     /* test */
-    
+
     border-radius: 15px;
     background-color: #9792e4;
+}
+
+#about-us .text-center :nth-child(2){
+    margin-bottom: 24px;
+}
+
+#about-us .card{
+    align-items: flex-start;
+    background-color: white;
+}
+
+#about-us .card-img{
+    width: 65px;
+    min-height: 65px;
+    border-radius: 50%;
+
+}
+
+#about-us .card-text h2{
+    min-height: 50px ;
 }
 
 
