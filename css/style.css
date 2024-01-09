@@ -38,3 +38,68 @@ nav #menu-nav{
 
     /* test */
 }
+
+main{
+    padding: 18px 12px;
+}
+
+main .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 11px 0;
+    gap: 10px;
+    
+    width: 100%;
+    height: auto;
+
+    border-radius: 15px;
+
+    background-color: #b5ddff;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-text h2{
+    width: 88px;
+    height: 10px;
+    background-color: #0385fd;
+
+    /* test */
+}
+
+.card-text p{
+    max-width: 90px;
+    min-height: 45px;
+    background-color: #0385fd;
+
+    /* tests */
+}
+
+.card-text .btn-card{
+    max-width: 78px;
+    min-height: 16px;
+    border-radius: 15px;
+    background-color: #0385fd;
+
+    /* test */
+
+}
+
+.card .card-img{
+    width: 75px;
+    min-height: 102px;
+    background-color: #0385fd;
+
+}
