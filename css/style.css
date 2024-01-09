@@ -39,23 +39,25 @@ nav #menu-nav{
     /* test */
 }
 
-main{
-    padding: 18px 12px;
+.main{
+    padding: 18px 12px 30px;
 }
 
-main .cards{
+.main .cards{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
+
+
 
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 14px 11px 0;
-    gap: 10px;
+    padding: 14px 11px ;
+    gap: 15px;
     
     width: 100%;
     height: auto;
@@ -65,10 +67,14 @@ main .cards{
     background-color: #b5ddff;
 }
 
+.cards :nth-child(1){
+    padding-bottom: 0;
+}
+
 .card-text{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .card-text h2{
@@ -102,4 +108,114 @@ main .cards{
     min-height: 102px;
     background-color: #0385fd;
 
+    /* test */
+
 }
+
+.icon-card{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .icon-card .fa-solid{
+    margin-bottom: 11px;
+    font-size: 26px;
+    color: #0385fd;
+    
+
+
+}
+
+
+.icon-card h2{
+    width: 42px;
+    min-height: 7px;
+    background-color: #0385fd;
+
+    /* test */
+}
+
+.card .icon-text{
+    width: 90px;
+    min-height: 45px;
+    background-color: #0385fd;
+
+    /* test */
+}
+
+
+#planning{
+    background-color: #9792e4;
+}
+
+#planning .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 12px;
+}
+
+
+.center .img-center{
+    width: 115px;
+    min-height: 105px;
+    background-color: #6338a1;
+
+    /* test */
+
+    margin-bottom: 30px;
+}
+
+.text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-center h2{
+    width: 115px;
+    min-height: 15px;
+    background-color: #6338a1;
+     
+    /* test */
+    margin-bottom: 20px;
+}
+
+.text-center p{
+    width: 115px;
+    min-height: 60px;
+    background-color: #6338a1;
+     
+    /* test */
+
+    margin-bottom: 12px;
+}
+
+.center-card{
+    background-color: white;
+}
+
+.img-center-card{
+    width: 88px;
+    min-height: 100px;
+    background-color: #6338a1;
+     
+    /* test */
+}
+
+.btn-center-card{
+    width: 15px;
+    min-height: 15px;
+
+    /* test */
+    
+    background-color: #9792e4;
+    border-radius: 50%;
+}
+
+
+
+
