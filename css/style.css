@@ -8,6 +8,12 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+#planning .img{
+    min-height: 20%;
+    background-color: #6338a1;
+
+    /* test */
+}
 
 header{
     background-color: #0084fd;
@@ -19,6 +25,14 @@ nav{
     align-items: center;
     padding: 8px 15px;
 
+}
+
+.card-text p{
+    width: 20%;
+    min-height: 10px;
+    background-color: #fff;
+
+    /* test */
 }
 
 nav #logo{
@@ -37,6 +51,25 @@ nav #menu-nav{
     background-color: aqua;
 
     /* test */
+}
+
+.menu-links{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-links ul{
+    
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.menu-links ul li, a{
+    display: none;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .main{
@@ -76,7 +109,15 @@ nav #menu-nav{
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    width: 100%;
+    min-height: auto;
+}
+
+.main .card-text {
+    align-items: flex-start;
+}
+
+.main .btn-card{
+    align-self: flex-start;
 }
 
 .card-text h2 ,.card-text h3{
@@ -87,13 +128,6 @@ nav #menu-nav{
     /* test */
 }
 
-#demo .card-text p{
-    max-width: 90px;
-    min-height: 45px;
-    background-color: #0385fd;
-
-    /* tests */
-}
 
 .card-text .btn-card{
     max-width: 78px;
@@ -169,7 +203,7 @@ nav #menu-nav{
 .center .img-center{
     width: 115px;
     min-height: 105px;
-    background-color: #6338a1;
+    
 
     /* test */
 
@@ -275,7 +309,7 @@ nav #menu-nav{
     min-height: 15px;
 
     /* test */
-    align-self: center;
+    /* align-self: center; */
     border-radius: 15px;
     background-color: #9792e4;
 }
@@ -285,10 +319,21 @@ nav #menu-nav{
 }
 
 #about-us .text-about-us{
+    
+    min-height: 20px;
+    /* test */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.text-about-us h2, .text-about-us p{
+    width: 20%;
+    min-height: 10px;
+    color: blue;
+
+    /* test */
 }
 
 #about-us .card{
@@ -349,7 +394,7 @@ nav #menu-nav{
     background-color: #fff;
 }
 
-footer{
+.footer{
     background-color: #333333;
 }
 
@@ -526,7 +571,7 @@ footer .text-center :nth-child(2){
         padding: 50px 30px 80px;
     }
 
-    #about-us .text-center{
+    #about-us .center{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -542,7 +587,93 @@ footer .text-center :nth-child(2){
         margin-bottom: 0;
     }
 
+    #about-us .card{
+        align-items: flex-start;
+    }
+
+    #about-us .text-center{
+        align-items: flex-end;
+    }
+
 }
+
+
+@media screen and (min-width:997px){
+    nav, .main, .center{
+        max-width: 997px;
+        margin: 0 auto;
+    }
+
+    .menu-links ul li, a{
+        display: block;
+    }
+
+    #menu-nav{
+        display: none;
+    }
+
+    .main .big-card.card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .main .card-img{
+        align-self: flex-end;
+    }
+
+    #benefits .cards .card{
+        width: calc(100% / 3 - 15px);
+    }
+
+    #planning .center{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #planning .center .img-center{
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+
+
+    #planning .center{
+        gap: 40px;
+        
+    }
+
+
+    #planning .img{
+        margin-bottom: 65px;
+    }
+
+
+    #planning .text-center{
+        gap: 30px;
+    }
+
+    #planning .center-card.card{
+        margin-top: 80px;
+    }
+
+   
+
+
+
+    @media screen and (min-width:1200px){
+        nav, .main, .center{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    }
+
+
+
+
 
 
 
