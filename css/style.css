@@ -12,12 +12,6 @@ img{
     width: 100%;
 }
 
-#planning .img img{
-    margin-bottom: 95px;
-    width: 100%;
-    
-}
-
 header{
     background-color: #0084fd;
 }
@@ -40,10 +34,15 @@ nav{
 
 }
 
+.btn-nav{
+    display: none;
+    padding: 15px 45px;
+    border-radius: 50px;
+    background-color: #fff;
+}
 
-
-nav #logo{
-   
+.btn-nav a{
+    color: black;
 
 }
 
@@ -56,7 +55,7 @@ nav #menu-nav{
 }
 
 .menu-links{
-    
+    display: none;
     display: flex;
     flex-direction: row;
 }
@@ -64,8 +63,14 @@ nav #menu-nav{
 .menu-links ul{
     
     display: flex;
+    align-items: center;
     gap: 12px;
     text-decoration: none;
+}
+
+.menu-links ul li a{
+    color: white;
+
 }
 
 .menu-links ul li, .menu-links ul a{
@@ -93,8 +98,7 @@ nav #menu-nav{
     align-items: center;
     padding: 40px 30px ;
     gap: 15px;
-    
-    width: 100%;
+
     height: auto;
 
     border-radius: 15px;
@@ -119,14 +123,19 @@ nav #menu-nav{
     gap: 40px;
 }
 
+.main .card-text p {
+    margin-bottom: 0;
+    text-align: start;
+    color: black;
+
+}
+
 .main .btn-card{
     align-self: flex-start;
 }
 
 .card-text h2 ,.card-text h3{
     color: #46a6fe;
-
-    /* test */
 }
 
 
@@ -134,7 +143,7 @@ nav #menu-nav{
     border-radius: 50px;
     background-color: #0385fd;
 
-    /* test */
+   
     display: flex;
     gap: 10px;
     align-items: center;
@@ -151,20 +160,15 @@ nav #menu-nav{
     text-decoration: none;
 }
 
-.main .card-img img{
+
+.main .big-card-img {
+    align-self: flex-end;
+}
+.main .big-card-img img{
     width: 100%;
-
-   
-
-    
-
-
-
 }
 
 .icon-card{
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,8 +178,6 @@ nav #menu-nav{
     margin-bottom: 11px;
     font-size: 65px;
     color: #0385fd;
-    
-
 
 }
 
@@ -194,8 +196,19 @@ nav #menu-nav{
 
 }
 
+#planning .img img{
+    margin-bottom: 95px;
+    width: 100%;
+    
+}
+
 #planning .card-text p{
     color: black;
+}
+
+#planning .text-center p{
+    text-align: start;
+    color: white;
 }
 
 .center{
@@ -277,11 +290,9 @@ nav #menu-nav{
     background-color: #9792e4;
 }
 
-.testimonial-card :nth-child(1){
-    /* padding:14px 11px; */
-}
 
-.testimonial-card .card-img img{
+
+.card-img img{
     width: 200px;
     min-height: 200px;
     border-radius: 50%;
@@ -333,10 +344,15 @@ nav #menu-nav{
 }
 
 
-#benefits .card-text h2,
-#benefits .card-text h3{
+#benefits .card-text h2{
     color: #9792e4 ;
     font-size: 35px;
+}
+
+#benefits .card-text h3 {
+    font-size: 25px;
+    color: #9792e4 ;
+
 }
 
 
@@ -358,47 +374,54 @@ nav #menu-nav{
     text-decoration: none;
 }
 
+#about-us .center{
+    align-items: flex-start;
+}
+
 #about-us .text-center :nth-child(2){
     margin-bottom: 24px;
 }
 
 #about-us .text-about-us{
     
-    min-height: 20px;
-    /* test */
+   
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+}
+    
+
+.text-about-us h2{
+    font-size: 43px;
+    color: #9893e4;
+
 }
 
-.text-about-us h2, .text-about-us p{
-    width: 20%;
-    min-height: 10px;
-    color: blue;
+.text-about-us p{
 
-    /* test */
+    text-align: start;
+
 }
 
 #about-us .card{
+    padding: 0;
     align-items: center;
     background-color: white;
 }
 
-#about-us .card-img{
-    width: 65px;
-    min-height: 65px;
-    border-radius: 50%;
 
-    /* test */
 
+#about-us .btn-card{
+    background-color: #9792e4;
+}
+
+#about-us .card-text{
+    align-items: baseline;
 }
 
 
 #about-us .card-text h2{
-    min-height: 50px ;
-
-    /* test */
+    color: #9792e4;
+    
 }
 
 #get-started .text-center{
@@ -407,35 +430,49 @@ nav #menu-nav{
 
 
 #get-started .text-center strong{
-    background-color:  #6338a1;
-
-    /* test */
+  color:  #b2aeea;
 }
 
 #get-started h3{
-    width: 50%;
-    min-height: 27px;
-    background-color:  #6338a1;
-
-    /* test */
+    font-size: 30px;
+    color: white;
     margin-bottom: 15px;
+    text-align: center;
 
+}
+
+#get-started h2{
+    font-size: 60px;
+    color: #fdc15f ;
+}
+
+#get-started p{
+    color: white;
 }
 
 #get-started .btn-get-started{
-    width: 20%;
-    min-height: 25px;
-    background-color: white;
-
-    /* test */
-    margin-bottom: 10px;
-    border-radius: 15px;
+    
+    padding: 15px 45px;
+    border-radius: 50px;
+    
+    margin-bottom: 30px;
+    background-color: #fff;
 }
 
+#get-started .btn-get-started a{
+    color:#9792e4 ;
+    text-decoration: none;
+}
+
+
 .copyright{
-    width: 30%;
-    min-height: 15px;
-    background-color: #fff;
+    display: flex;
+    gap: 2px;
+    color: white;
+}
+
+.copyright a{
+    color: white;
 }
 
 .footer{
@@ -444,6 +481,16 @@ nav #menu-nav{
 
 footer.center{
     padding: 13px 18px;
+}
+
+.footer .text-center{
+    display: flex;
+    color: white;
+}
+
+.footer-links p{
+    display: flex;
+    gap: 10px;
 }
 
 footer .text-center :nth-child(2){
@@ -478,24 +525,16 @@ footer .text-center :nth-child(2){
     }
     #planning .center{
         padding: 65px 25px 32px;
-        align-items: flex-start;
+        align-items: flex-end;
     }
+
     #planning .img-center{
         width: 100%;
 
         margin-bottom: 55px;
     }
 
-    #planning .text-center{
-        width: 100%;
-    }
-
-    #planning .text-center h2 {
-        width: 100%;
-    }
-
     #planning .text-center p {
-        width: 100%;
         margin-bottom: 20px;
     }
     #planning .center-card{
@@ -506,20 +545,10 @@ footer .text-center :nth-child(2){
        
     }
     #planning .text-center-card{
-        width: 100%;
         align-items: center;
     }
 
-    #planning .text-center-card h3{
-       
-    }
 
-    #planning .text-center-card.card-text p{
-        width: 320px;
-        min-height: 25px;
-
-        /* test */
-    }
     #testimonial.center{
         padding: 30px 15px ;
     }
@@ -543,7 +572,7 @@ footer .text-center :nth-child(2){
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-       align-items: flex-start;
+        align-items: flex-start;
         flex-direction: row;
         gap: 16px;
     }
@@ -555,14 +584,6 @@ footer .text-center :nth-child(2){
         align-items: end;
         gap: 15px;
         padding: 15px 8px 22px;
-    }
-
-    #testimonial .testimonial-card .card .card-img{
-       
-    }
-
-    #testimonial .card .card-text{
-       
     }
 
     #testimonial .card .card-text p{
@@ -592,30 +613,22 @@ footer .text-center :nth-child(2){
     }
 
     #benefits .cards .card{
-        width: calc(100% / 2 - 15px);
+        width: calc(100% / 2 - 10px);
 
     }
     #benefits  h2{
-        margin: 0;;
+        margin: 0;
     }
 
     #about-us{
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
         padding: 50px 30px 80px;
     }
 
     #about-us .center{
         display: flex;
         flex-direction: row;
-        align-items: center;
+       
         gap: 50px;
-        width: 100%;
-    }
-
-    #about-us .text-about-us{
-        width: 100%;
     }
 
     #about-us .text-center .card{
@@ -626,9 +639,6 @@ footer .text-center :nth-child(2){
         align-items: flex-start;
     }
 
-    #about-us .text-center{
-        align-items: flex-end;
-    }
 
 }
 
@@ -639,9 +649,13 @@ footer .text-center :nth-child(2){
         margin: 0 auto;
     }
 
-    .menu-links ul li, a{
+    .menu-links, 
+    .menu-links ul li,
+    .menu-links ul a,
+    .btn-nav{
         display: block;
     }
+
 
     #menu-nav{
         display: none;
@@ -659,7 +673,7 @@ footer .text-center :nth-child(2){
     }
 
     #benefits .cards .card{
-        width: calc(100% / 3 - 15px);
+        width: calc(100% / 3 - 10px);
     }
 
     #planning .center{
@@ -691,9 +705,12 @@ footer .text-center :nth-child(2){
     }
 
     #planning .center-card.card{
-        margin-top: 80px;
+        margin-top: 150px;
     }
 
+    .footer .footer-links a{
+        display: inline-block;
+    }
    
 
 
@@ -703,6 +720,11 @@ footer .text-center :nth-child(2){
             max-width: 1200px;
             margin: 0 auto;
         }
+
+        #planning .center-card.card{
+            margin-top: 150px;
+        }
+
 
     }
 
