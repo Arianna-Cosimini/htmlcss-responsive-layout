@@ -67,14 +67,16 @@ nav #menu-nav{
     background-color: #b5ddff;
 }
 
-.cards :nth-child(1){
+.main .cards :nth-child(1){
     padding-bottom: 0;
 }
 
 .card-text{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
+    width: 100%;
 }
 
 .card-text h2 ,.card-text h3{
@@ -85,7 +87,7 @@ nav #menu-nav{
     /* test */
 }
 
-.card-text p{
+#demo .card-text p{
     max-width: 90px;
     min-height: 45px;
     background-color: #0385fd;
@@ -109,6 +111,10 @@ nav #menu-nav{
     background-color: #0385fd;
 
     /* test */
+
+    
+
+
 
 }
 
@@ -173,11 +179,12 @@ nav #menu-nav{
 .text-center{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
 }
 
 .text-center h2{
-    width: 115px;
+    width: 30%;
     min-height: 15px;
     background-color: #6338a1;
      
@@ -186,7 +193,7 @@ nav #menu-nav{
 }
 
 .text-center p{
-    width: 115px;
+    width: 40%;
     min-height: 60px;
     background-color: #6338a1;
      
@@ -233,7 +240,7 @@ nav #menu-nav{
 }
 
 .text-center strong{
-    width: 44px;
+    width: 20%;
     min-height: 8px;
     background-color: #9792e4;
 
@@ -268,7 +275,7 @@ nav #menu-nav{
     min-height: 15px;
 
     /* test */
-
+    align-self: center;
     border-radius: 15px;
     background-color: #9792e4;
 }
@@ -277,8 +284,15 @@ nav #menu-nav{
     margin-bottom: 24px;
 }
 
+#about-us .text-about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 #about-us .card{
-    align-items: flex-start;
+    align-items: center;
     background-color: white;
 }
 
@@ -310,7 +324,7 @@ nav #menu-nav{
 }
 
 #get-started h3{
-    width: 98px;
+    width: 50%;
     min-height: 27px;
     background-color:  #6338a1;
 
@@ -320,7 +334,7 @@ nav #menu-nav{
 }
 
 #get-started .btn-get-started{
-    width: 100px;
+    width: 20%;
     min-height: 25px;
     background-color: white;
 
@@ -330,7 +344,7 @@ nav #menu-nav{
 }
 
 .copyright{
-    width: 100px;
+    width: 30%;
     min-height: 15px;
     background-color: #fff;
 }
@@ -346,5 +360,190 @@ footer.center{
 footer .text-center :nth-child(2){
     margin-bottom: 0;
 }
+
+
+@media screen and (min-width:768px){
+     .main .cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: normal;
+        justify-content: space-between;
+        
+
+    }
+
+    .main .big-card{
+        align-items: flex-start;
+    }
+
+    .main .big-card.card{
+        width: calc(100% / 3 * 2 - 10px);
+
+    }
+
+    .main .card{
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        width:calc(100% / 3 - 15px);
+    }
+    #planning .center{
+        padding: 65px 25px 32px;
+        align-items: flex-start;
+    }
+    #planning .img-center{
+        width: 100%;
+        /* test */
+        height: 300px;
+        /* fine test */
+
+        margin-bottom: 55px;
+    }
+
+    #planning .text-center{
+        width: 100%;
+    }
+
+    #planning .text-center h2 {
+        width: 100%;
+    }
+
+    #planning .text-center p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #planning .center-card{
+        padding: 18px 27px 15px ;
+    }
+    #planning .img-center-card{
+        width: 100%;
+        height: 300px;
+    }
+    #planning .text-center-card{
+        width: 100%;
+        align-items: center;
+    }
+
+    #planning .text-center-card h3{
+        width: 100px;
+        min-height: 17px;
+
+        /* test */
+    }
+
+    #planning .text-center-card.card-text p{
+        width: 320px;
+        min-height: 25px;
+
+        /* test */
+    }
+    #testimonial.center{
+        padding: 30px 15px ;
+    }
+    #planning .btn-center-card{
+      
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+    }
+
+    #testimonial .text-center{
+        width: 100%;
+        align-items:center;
+
+    }
+
+    #testimonial .text-center p{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #testimonial .testimonial-card.cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+       align-items: flex-start;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    #testimonial .testimonial-card .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 8px 22px;
+    }
+
+    #testimonial .testimonial-card .card .card-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    #testimonial .card .card-text{
+        width: 226px;
+    }
+
+    #testimonial .card .card-text p{
+        background-color: #fff;
+    }
+
+    #testimonial .card .card-text h2{
+        height: 20px;
+        background-color: #fff;
+    }
+
+    #benefits .center{
+        padding: 40px 15px 30px ;
+    }
+
+    #benefits .center.cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    
+    #benefits .text-center {
+        align-items: center;
+    }
+
+    #benefits .cards .card{
+        width: calc(100% / 2 - 15px);
+
+    }
+    #benefits  h2{
+        margin: 0;;
+    }
+
+    #about-us{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        padding: 50px 30px 80px;
+    }
+
+    #about-us .text-center{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    #about-us .text-about-us{
+        width: 100%;
+    }
+
+    #about-us .text-center .card{
+        margin-bottom: 0;
+    }
+
+}
+
+
 
 
