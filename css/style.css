@@ -8,11 +8,14 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
-#planning .img{
-    min-height: 20%;
-    background-color: #6338a1;
+img{
+    width: 100%;
+}
 
-    /* test */
+#planning .img img{
+    margin-bottom: 95px;
+    width: 100%;
+    
 }
 
 header{
@@ -28,29 +31,28 @@ nav{
 }
 
 .card-text p{
-    width: 20%;
-    min-height: 10px;
-    background-color: #fff;
 
-    /* test */
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+    
+
+
 }
 
-nav #logo{
-    width: 40px;
-    height: 20px;
-    background-color: aqua;
 
-    /* test */
+
+nav #logo{
+   
 
 }
 
 
 nav #menu-nav{
-    width: 15px;
-    height: 15px;
-    background-color: aqua;
 
-    /* test */
+    color: white;
+
+
 }
 
 .menu-links{
@@ -66,14 +68,14 @@ nav #menu-nav{
     text-decoration: none;
 }
 
-.menu-links ul li, a{
+.menu-links ul li, .menu-links ul a{
     display: none;
     text-decoration: none;
     list-style-type: none;
 }
 
 .main{
-    padding: 18px 12px 30px;
+    padding: 50px 30px 80px;
 }
 
 .cards{
@@ -89,7 +91,7 @@ nav #menu-nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 14px 11px ;
+    padding: 40px 30px ;
     gap: 15px;
     
     width: 100%;
@@ -108,12 +110,13 @@ nav #menu-nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    min-height: auto;
+    gap: 36px;
+    
 }
 
 .main .card-text {
     align-items: flex-start;
+    gap: 40px;
 }
 
 .main .btn-card{
@@ -121,30 +124,37 @@ nav #menu-nav{
 }
 
 .card-text h2 ,.card-text h3{
-    width: 88px;
-    height: 10px;
-    background-color: #0385fd;
+    color: #46a6fe;
 
     /* test */
 }
 
 
 .card-text .btn-card{
-    max-width: 78px;
-    min-height: 16px;
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: #0385fd;
 
     /* test */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+
+    padding: 15px 45px;
+    color: white;
+    
 
 }
 
-.card-img{
-    width: 75px;
-    min-height: 102px;
-    background-color: #0385fd;
+.card-text .btn-card a{
+    color: white;
+    text-decoration: none;
+}
 
-    /* test */
+.main .card-img img{
+    width: 100%;
+
+   
 
     
 
@@ -162,7 +172,7 @@ nav #menu-nav{
 
 .card .icon-card .fa-solid{
     margin-bottom: 11px;
-    font-size: 26px;
+    font-size: 65px;
     color: #0385fd;
     
 
@@ -171,19 +181,11 @@ nav #menu-nav{
 
 
 .icon-card h2{
-    width: 42px;
-    min-height: 7px;
-    background-color: #0385fd;
-
-    /* test */
+   color: #0385fd;
 }
 
 .card .icon-text{
-    width: 90px;
-    min-height: 45px;
-    background-color: #0385fd;
-
-    /* test */
+    text-align: center;
 }
 
 
@@ -192,20 +194,20 @@ nav #menu-nav{
 
 }
 
+#planning .card-text p{
+    color: black;
+}
+
 .center{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 12px;
+    padding: 50px 30px;
 }
 
 
 .center .img-center{
-    width: 115px;
-    min-height: 105px;
     
-
-    /* test */
 
     margin-bottom: 30px;
 }
@@ -213,74 +215,62 @@ nav #menu-nav{
 .text-center{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
 .text-center h2{
-    width: 30%;
-    min-height: 15px;
-    background-color: #6338a1;
-     
-    /* test */
-    margin-bottom: 20px;
+    
+    margin-bottom: 55px;
+    color: white;
+    text-align:start;
 }
 
 .text-center p{
-    width: 40%;
-    min-height: 60px;
-    background-color: #6338a1;
-     
-    /* test */
+    
+    margin-bottom: 35px;
+    text-align: center;
 
-    margin-bottom: 12px;
 }
 
 .center-card{
     background-color: white;
 }
 
-.img-center-card{
-    width: 88px;
-    min-height: 100px;
-    background-color: #6338a1;
-     
-    /* test */
+.img-center-card img{
+    width: 100%;
 }
 
 .card-text h3{
-    background-color: #6338a1;
-
-    /* test */
+    color: black;
 
 }
 
 .text-center-card p{
-    background-color: #6338a1;
-
-    /* test */
+    text-align: center;
 
 
 }
 
 .btn-center-card{
-    width: 15px;
-    min-height: 15px;
-
-    /* test */
 
     background-color: #9792e4;
     border-radius: 50%;
 }
 
-.text-center strong{
-    width: 20%;
-    min-height: 8px;
-    background-color: #9792e4;
+.btn-center-card .fa-solid{
+    padding: 20px;
+}
 
-    /* TEST */
+.text-center strong{
+    font-weight: 300;
     align-self: center;
     margin-bottom: 15px;
+}
+
+#testimonial h2{
+    text-align: center;
+    
+    color: #9792e4;
 }
 
 .testimonial-card .card{
@@ -288,13 +278,37 @@ nav #menu-nav{
 }
 
 .testimonial-card :nth-child(1){
-    padding:14px 11px;
+    /* padding:14px 11px; */
 }
 
-.testimonial-card .card-img{
-    width: 70px;
-    min-height: 70px;
+.testimonial-card .card-img img{
+    width: 200px;
+    min-height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+#testimonial .card-text p::before{
+    content: '\f10d';
+    font-family: 'FontAwesome';
+
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+
+#testimonial .card-text p::after{
+    content: '\f10e';
+    font-family: 'FontAwesome';
+
+    margin-left: 10px;
+}
+
+#testimonial .card-text p{
+    margin-bottom: 0;
+}
+
+#testimonial .card-text h2{
+    color: white;
 }
 
 
@@ -304,14 +318,44 @@ nav #menu-nav{
     align-items: flex-start;
 }
 
-.btn-card{
-    width: 50px;
-    min-height: 15px;
+#benefits .text-center h2 {
+    margin-bottom: 0;
+}
 
-    /* test */
-    /* align-self: center; */
+#benefits .card-text{
+    align-items: flex-start;
+    
+}
+
+#benefits .card-text p{
+    color: black;
+    text-align: start;
+}
+
+
+#benefits .card-text h2,
+#benefits .card-text h3{
+    color: #9792e4 ;
+    font-size: 35px;
+}
+
+
+
+.btn-card{
     border-radius: 15px;
     background-color: #9792e4;
+}
+
+#benefits .btn-card{
+    padding: 15px 45px;
+    border-radius: 50px;
+
+}
+
+
+#benefits .btn-card a{
+    color: white;
+    text-decoration: none;
 }
 
 #about-us .text-center :nth-child(2){
@@ -438,9 +482,6 @@ footer .text-center :nth-child(2){
     }
     #planning .img-center{
         width: 100%;
-        /* test */
-        height: 300px;
-        /* fine test */
 
         margin-bottom: 55px;
     }
@@ -462,7 +503,7 @@ footer .text-center :nth-child(2){
     }
     #planning .img-center-card{
         width: 100%;
-        height: 300px;
+       
     }
     #planning .text-center-card{
         width: 100%;
@@ -470,10 +511,7 @@ footer .text-center :nth-child(2){
     }
 
     #planning .text-center-card h3{
-        width: 100px;
-        min-height: 17px;
-
-        /* test */
+       
     }
 
     #planning .text-center-card.card-text p{
@@ -487,8 +525,6 @@ footer .text-center :nth-child(2){
     }
     #planning .btn-center-card{
       
-        width: 22px;
-        height: 22px;
         border-radius: 50%;
     }
 
@@ -516,28 +552,27 @@ footer .text-center :nth-child(2){
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
+        align-items: end;
         gap: 15px;
         padding: 15px 8px 22px;
     }
 
     #testimonial .testimonial-card .card .card-img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
+       
     }
 
     #testimonial .card .card-text{
-        width: 226px;
+       
     }
 
     #testimonial .card .card-text p{
-        background-color: #fff;
+        text-align: start;
+        
     }
 
     #testimonial .card .card-text h2{
-        height: 20px;
-        background-color: #fff;
+        align-self: flex-start;
+        
     }
 
     #benefits .center{
